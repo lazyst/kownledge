@@ -1,6 +1,7 @@
 >### 行级排版上下文
+
 + Inline Formatting Context (IFC)
-+ **只包含行级盒子**的容器会创建一个IFC
++ **只包含行级盒子**的容器会创建一个 IFC
 + IFC 内的排版规则
     + 盒子在一行内水平拜访
     + 一行内放不下时，换行显示
@@ -10,7 +11,5 @@
 
 
 <style>
-    strong {
-        color: lawngreen;
-    }
+    
 </style>

@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <style>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">  <style>
     body {
       font-size: 1.1rem;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -20,15 +20,26 @@
       homepage: 'welcome.md',
       name: '<strong>学习笔记</strong>',
       repo: '',
-      themeColor: 'skyblue',
       loadSidebar: true,
       subMaxLevel: 100,
       loadNavbar: true,
       auto2top: true,
       topMargin: 90,
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+  },
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- 语法支持文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-bash.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-python.min.js"></script>
 </body>
 </html>
